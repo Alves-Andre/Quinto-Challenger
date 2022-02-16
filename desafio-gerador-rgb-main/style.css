@@ -36,8 +36,10 @@ body {
 }
 #datahora{
     position: inherit;
+    display: flex;
+    align-items: center;
     width: 85%;
-    height: 80%;
+    height: 60%;
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
@@ -57,4 +59,43 @@ footer p {
     top: 95%;
     left: 50%;
     transform: translate(-50%);
+}
+.cores {
+    border-radius: 15px;
+    margin: 10px;
+    width: 120px;
+    border-radius: 15px;
+    height: 7px;
+    border: none;
+}
+.cores::-webkit-slider-runnable-track{
+    all:unset;
+}
+.cores::-webkit-slider-thumb{
+
+    all:unset; /* limpa os estilos iniciais */
+     /* remove a aparencia padão */
+    border: none;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: blue;
+  }
+#red {
+    background-color: red;
+}
+#seletores {
+    display: flex;
+    justify-content: center;
+}
+#boxresultado {
+    position: inherit;
+    border-radius: 50%;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
