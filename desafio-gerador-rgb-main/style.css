@@ -7,6 +7,9 @@ body {
     background-color: hsl(221,8%,23%);
     color: white;
 }
+footer p a {
+    color:aqua;
+}
 #titulo {
     position: absolute;
     left: 50%;
@@ -66,24 +69,34 @@ footer p {
     width: 120px;
     border-radius: 15px;
     height: 7px;
-    border: none;
+    -webkit-appearance: none;
 }
-.cores::-webkit-slider-runnable-track{
-    all:unset;
-}
+
 .cores::-webkit-slider-thumb{
-
-    all:unset; /* limpa os estilos iniciais */
-     /* remove a aparencia padão */
-    border: none;
-
+    -webkit-appearance: none;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: blue;
-  }
-#red {
+    cursor: pointer;
+    opacity: 100%;
+}
+#red::-webkit-slider-thumb{
     background-color: red;
+}
+#green::-webkit-slider-thumb{
+    background: green;
+}
+#blue::-webkit-slider-thumb{
+    background:blue;
+}
+#red {
+    background: red;
+}
+#green {
+    background: green;
+}
+#blue {
+    background: blue;
 }
 #seletores {
     display: flex;
@@ -98,4 +111,10 @@ footer p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+#inforesultado {
+    position: inherit;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
 }

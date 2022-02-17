@@ -21,3 +21,10 @@ function horaAtual(){
         segundosF = (segundos==1)? '0'+segundos : segundos;
     return hora+':'+minutosF+':'+segundosF
 }
+function mudarcor(){
+    var red = document.getElementById('red').value;
+    var green = document.getElementById('green').value;
+    var blue = document.getElementById('blue').value;
+    document.getElementById('boxresultado').style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+    document.getElementById('inforesultado').innerText = 'RGB(' + red + ',' + green + ',' + blue + ')';
+}
