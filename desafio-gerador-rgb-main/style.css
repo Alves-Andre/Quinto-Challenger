@@ -118,3 +118,64 @@ footer p {
     left: 50%;
     transform: translate(-50%);
 }
+.sliderValue{
+    position: relative;
+    width: 100%;
+}
+.sliderValue span{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    top:-40px;
+    transform: translate(-50%) scale(0);
+    line-height: 40px;
+    left: 110px;
+    z-index: 2;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.sliderValue #spanred::after{
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.sliderValue #spangreen::after{
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    background-color: green;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.sliderValue #spanblue::after{
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.sliderValue span.show{
+    transform: translateX(-70%) scale(1);
+}
